@@ -784,7 +784,7 @@ body {
 }
 
 .modal-form-checkbox:checked + .modal-form-check-desc::before {
-  background-image: url('./images/checkbox-img.svg');
+  background-image: url('../images/checkbox-img.svg');
   background-color: var(--accent-color);
   background-size: 10px 8px;
   background-repeat: no-repeat;
