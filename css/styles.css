@@ -550,6 +550,65 @@ body {
   fill: var(--button-color);
 }
 
+.footer-form {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  position: relative;
+}
+
+.footer-form-desc {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-form-input {
+  height: 40px;
+  padding: 8px 24px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-from-btn {
+  min-height: 40px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-form-send-icon {
+  fill: #ffffff;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -641,6 +700,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #000;
+  transition: border-color var(--transition-params);
 }
 
 .modal-form-input:focus {
@@ -676,6 +736,7 @@ body {
   left: 12px;
   transform: translateY(-50%);
   fill: var(--primary-color);
+  transition: fill var(--transition-params);
 }
 
 .modal-form-msg {
@@ -689,6 +750,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  transition: border-color var(--transition-params);
 }
 
 .modal-form-msg::placeholder {
